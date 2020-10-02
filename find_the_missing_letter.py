@@ -1,5 +1,5 @@
 """"
-#Find the missing letter
+Find the missing letter
 
 Write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter
 in the array.
@@ -9,12 +9,12 @@ always be at least 2. The array will always contain letters in only one case.
 
 Example:
 
-['a','b','c','d','f'] -> 'e' ['O','Q','R','S'] -> 'P'
-
+['a','b','c','d','f'] -> 'e'
+['O','Q','R','S'] -> 'P'
 ["a","b","c","d","f"] -> "e"
 ["O","Q","R","S"] -> "P"
 """
 
 
 def find_missing_letter(chars):
-    return ''.join([chr(ord(chars[i]) + 1) for i in range(len(chars) - 1) if ord(chars[i]) == ord(chars[i + 1]) - 2])
+    return next(chr(ord(chars[i]) + 1) for i in range(len(chars) - 1) if ord(chars[i]) + 1 != ord(chars[i + 1]))
