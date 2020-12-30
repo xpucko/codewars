@@ -1,1 +1,2 @@
-# The description of each problem is in the file in the form of a comment.
+# Some problems from CodeWars that I was solving as an exercise.
+## The description of the problems is in the files in a form of a comment.
